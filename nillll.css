@@ -1,0 +1,880 @@
+#header {
+  background-color: #333; /* Change to your preferred background color */
+  padding: 10px 0;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 999;
+}
+
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style the logo */
+#header .logo a {
+  font-size: 24px; /* Change to your preferred font size */
+  color: #fff; /* Change to your preferred text color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style the navigation menu */
+#header #navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#header #navbar ul li {
+  margin: 0 15px;
+}
+
+#header #navbar ul li a {
+  color: #fff; /* Change to your preferred text color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#header #navbar ul li a:hover {
+  color: #00bcd4; /* Change to your preferred hover color */
+}
+
+/* Style the dropdown menu */
+#header #navbar ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Change to your preferred background color */
+  border-radius: 4px;
+  padding: 10px 0;
+}
+
+#header #navbar ul li:hover ul {
+  display: block;
+}
+
+#header #navbar ul li ul li {
+  display: block;
+  margin: 10px;
+}
+
+#header #navbar ul li ul li a {
+  color: #fff; /* Change to your preferred text color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#header #navbar ul li ul li a:hover {
+  color: #00bcd4; /* Change to your preferred hover color */
+}
+/* Style for form container */
+.about-info {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for form labels */
+  .about-info label {
+    font-weight: bold;
+  }
+  
+  /* Style for form input fields */
+  .about-info .form-control {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Style for form submit button */
+  .about-info .btn-submit {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .about-info .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* You can add more CSS to further style the form as needed */
+  
+
+/* Style the mobile navigation toggle icon */
+#header .mobile-nav-toggle {
+  font-size: 24px;
+  color: #fff; /* Change to your preferred icon color */
+  cursor: pointer;
+  display: none;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #header .mobile-nav-toggle {
+    display: block;
+  }
+
+  #header #navbar {
+    display: none;
+  }
+
+  #header #navbar.active {
+    display: block;
+    background-color: #333; /* Change to your preferred background color */
+  }
+
+  #header #navbar ul {
+    flex-direction: column;
+  }
+
+  #header #navbar ul li {
+    margin: 10px 0;
+  }
+}
+/* Style the hero section */
+#hero {
+  position: relative;
+  height: 100vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+/* Style the overlay */
+#hero .overlay-itro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+}
+
+/* Style the hero content */
+#hero .hero-content {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#hero .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Style the hero title */
+#hero .hero-title {
+  font-size: 36px; /* Adjust the font size */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Style the hero subtitle with typed effect */
+#hero .hero-subtitle {
+  font-size: 20px; /* Adjust the font size */
+}
+
+/* Style the typed text */
+#hero .typed {
+  color: #00bcd4; /* Typed text color */
+  font-weight: bold;
+}
+
+/* Style the Learn More button (if needed) */
+#hero .btn {
+  background-color: #00bcd4; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#hero .btn:hover {
+  background-color: #0097a7; /* Button background color on hover */
+}
+/* Style the About section */
+#about {
+  background-color: #f8f8f8; /* Background color for the section */
+  padding: 80px 0; /* Adjust padding as needed */
+}
+
+#about .box-shadow-full {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for the content box */
+  background-color: #fff; /* Background color for the content box */
+  padding: 30px; /* Adjust padding as needed */
+  border-radius: 5px; /* Border radius for the content box */
+}
+
+#about .about-img img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  border-radius: 5px; /* Border radius for the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the image */
+}
+
+#about .about-info {
+  margin-top: 20px;
+}
+
+#about .title-s {
+  font-weight: bold;
+  color: #333; /* Text color for titles */
+}
+
+#about .skill-mf {
+  margin-top: 30px;
+}
+
+#about .skill-mf span {
+  font-weight: bold;
+}
+
+#about .progress-bar {
+  background-color: #00bcd4; /* Progress bar color */
+}
+
+/* Style the "About me" text */
+#about .about-me {
+  margin-top: 30px;
+}
+
+#about .title-box-2 h5 {
+  font-size: 24px; /* Title font size */
+  font-weight: bold;
+  color: #333; /* Title color */
+}
+
+#about .lead {
+  font-size: 16px; /* Text font size */
+  color: #777; /* Text color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #about .col-md-6 {
+    margin-bottom: 40px;
+  }
+}
+/* Style the Services section */
+#services {
+  background-color: #f8f8f8; /* Background color for the section */
+  padding: 80px 0; /* Adjust padding as needed */
+}
+
+#services .title-box {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#services .title-a {
+  font-size: 36px; /* Title font size */
+  font-weight: bold;
+  color: #333; /* Title color */
+}
+
+#services .subtitle-a {
+  font-size: 18px; /* Subtitle font size */
+  color: #777; /* Subtitle color */
+}
+
+#services .line-mf {
+  width: 100px;
+  height: 3px;
+  background-color: #00bcd4; /* Line color */
+  margin: 20px auto;
+}
+
+#services .service-box {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd; /* Border style */
+  border-radius: 5px; /* Border radius */
+  background-color: #fff; /* Background color for service boxes */
+}
+
+#services .service-ico {
+  font-size: 40px; /* Icon size */
+  color: #00bcd4; /* Icon color */
+}
+
+#services .s-title {
+  font-size: 24px; /* Service title font size */
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#services .s-description {
+  font-size: 16px; /* Service description font size */
+  color: #777; /* Description text color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #services .col-md-4 {
+    margin-bottom: 40px;
+  }
+}
+/* Style the Counter Section */
+.section-counter {
+  background-color: #f8f8f8; /* Background color for the section */
+  padding: 80px 0; /* Adjust padding as needed */
+  color: #333; /* Text color for counters and text */
+}
+
+.section-counter .bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.section-counter .overlay-mf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay color and opacity */
+}
+
+.section-counter .container {
+  position: relative;
+}
+
+.section-counter .counter-box {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd; /* Border style */
+  border-radius: 5px; /* Border radius */
+  background-color: #fff; /* Background color for counter boxes */
+}
+
+.section-counter .counter-ico {
+  font-size: 40px; /* Icon size */
+  color: #00bcd4; /* Icon color */
+}
+
+.section-counter .counter-num {
+  font-size: 36px; /* Counter number font size */
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.section-counter .counter-text {
+  font-size: 18px; /* Counter text font size */
+  color: #777; /* Text color for counter text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section-counter .col-sm-3 {
+    margin-bottom: 40px;
+  }
+}
+
+/* Style the Portfolio Section */
+.portfolio-mf {
+  background-color: #f8f8f8; /* Background color for the section */
+  padding: 80px 0; /* Adjust padding as needed */
+}
+
+.portfolio-mf .title-a {
+  font-size: 32px; /* Title font size */
+  color: #333; /* Text color for title */
+}
+
+.portfolio-mf .subtitle-a {
+  font-size: 18px; /* Subtitle font size */
+  color: #777; /* Text color for subtitle */
+}
+
+.portfolio-mf .line-mf {
+  width: 80px;
+  height: 3px;
+  background-color: #00bcd4; /* Line color */
+  margin: 20px auto; /* Adjust margin as needed */
+}
+
+.portfolio-mf .work-box {
+  margin-bottom: 30px;
+  border: 1px solid #ddd; /* Border style */
+  border-radius: 5px; /* Border radius */
+  background-color: #fff; /* Background color for portfolio boxes */
+}
+
+.portfolio-mf .work-box .work-img {
+  position: relative;
+}
+
+.portfolio-mf .work-box .work-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0; /* Rounded corners for the top */
+}
+
+.portfolio-mf .work-box .work-content {
+  padding: 20px;
+}
+
+.portfolio-mf .work-box h2.w-title {
+  font-size: 20px; /* Portfolio title font size */
+  color: #333; /* Text color for portfolio titles */
+}
+
+.portfolio-mf .work-box .w-more {
+  font-size: 14px; /* Details font size */
+  color: #777; /* Text color for details */
+}
+
+.portfolio-mf .work-box .w-like {
+  text-align: right;
+}
+
+.portfolio-mf .work-box .w-like a {
+  font-size: 24px; /* Plus icon font size */
+  color: #00bcd4; /* Icon color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .portfolio-mf .work-box {
+    margin-bottom: 40px;
+  }
+}
+/* Style the Testimonials Section */
+.testimonials {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 100px 0; /* Adjust padding as needed */
+  text-align: center;
+  color: #fff; /* Text color for testimonial content */
+}
+
+.testimonials .overlay-mf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay background color */
+  z-index: -1;
+}
+
+.testimonials .testimonials-slider {
+  margin-top: 40px; /* Adjust margin as needed */
+}
+
+.testimonials .testimonial-box {
+  padding: 40px;
+  border-radius: 10px; /* Rounded corners for testimonial boxes */
+  background-color: rgba(0, 0, 0, 0.5); /* Testimonial box background color */
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); /* Box shadow for testimonial boxes */
+}
+
+.testimonials .testimonial-box .author-test {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.testimonials .testimonial-box .author-test img {
+  width: 80px; /* Author image width */
+  height: 80px; /* Author image height */
+  border-radius: 50%; /* Rounded author image */
+}
+
+.testimonials .testimonial-box .author-test .author {
+  font-size: 18px; /* Author name font size */
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.testimonials .testimonial-box .content-test .description {
+  font-size: 16px; /* Testimonial description font size */
+  line-height: 1.6; /* Line height for testimonial text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 80px 0; /* Adjust padding for smaller screens */
+  }
+
+  .testimonials .testimonial-box {
+    padding: 20px; /* Adjust padding for testimonial boxes on smaller screens */
+  }
+}
+/* Testimonials Section */
+.testimonials {
+  background-image: url('assets/img/overlay-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Adjust padding as needed */
+  color: #fff; /* Text color for testimonial content */
+}
+
+.testimonials .overlay-mf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay background color and transparency */
+}
+
+.testimonials .container {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials .testimonials-slider {
+  margin-top: 40px; /* Adjust margin as needed */
+}
+
+.testimonials .testimonial-box {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7); /* Testimonial box background color and transparency */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for testimonial boxes */
+  text-align: center;
+}
+
+.testimonials .testimonial-box .author-test img {
+  width: 80px; /* Adjust author image width */
+  height: 80px; /* Adjust author image height */
+  border-radius: 50%; /* Rounded author image */
+}
+
+.testimonials .testimonial-box .author-test .author {
+  font-size: 20px; /* Adjust author name font size */
+  margin-top: 15px; /* Adjust margin as needed */
+}
+
+.testimonials .testimonial-box .content-test .description {
+  font-size: 16px; /* Testimonial description font size */
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 80px 0; /* Adjust padding for smaller screens */
+  }
+
+  .testimonials .testimonial-box {
+    padding: 20px; /* Adjust padding for testimonial boxes on smaller screens */
+  }
+}
+/* Testimonial Item */
+.testimonials .swiper-slide {
+  text-align: center;
+}
+
+.testimonials .testimonial-box {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7); /* Testimonial box background color and transparency */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for testimonial boxes */
+  text-align: center;
+}
+
+.testimonials .testimonial-box .author-test img {
+  width: 80px; /* Adjust author image width */
+  height: 80px; /* Adjust author image height */
+  border-radius: 50%; /* Rounded author image */
+}
+
+.testimonials .testimonial-box .author-test .author {
+  font-size: 20px; /* Adjust author name font size */
+  margin-top: 15px; /* Adjust margin as needed */
+}
+
+.testimonials .testimonial-box .content-test .description {
+  font-size: 16px; /* Testimonial description font size */
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .testimonials .testimonial-box {
+    padding: 20px; /* Adjust padding for testimonial boxes on smaller screens */
+  }
+}
+/* Blog Section */
+.blog-mf .title-a {
+  margin-bottom: 30px;
+}
+
+.blog-mf .line-mf {
+  background: #007BFF; /* Adjust the line color */
+  height: 2px;
+  width: 100px;
+  margin: 0 auto 30px;
+}
+
+.blog-mf .card-blog {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.blog-mf .card-blog .card-img {
+  overflow: hidden;
+}
+
+.blog-mf .card-blog .card-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-mf .card-blog .card-category-box {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-mf .card-blog .card-category {
+  background-color: #007BFF; /* Adjust category background color */
+  color: #fff; /* Adjust category text color */
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.blog-mf .card-blog .card-title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-mf .card-blog .card-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.blog-mf .card-blog .post-author .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.blog-mf .card-blog .post-author .author {
+  font-size: 16px;
+}
+
+.blog-mf .card-blog .post-date {
+  font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .blog-mf .card-blog .card-title {
+    font-size: 20px;
+  }
+
+  .blog-mf .card-blog .card-description {
+    font-size: 14px;
+  }
+}
+/* Blog Section */
+.blog-mf .title-a {
+  margin-bottom: 30px;
+  font-size: 28px; /* Increase font size for the title */
+  font-weight: 600; /* Add some font weight to the title */
+  color: #333; /* Title color */
+}
+
+.blog-mf .line-mf {
+  background: #007BFF;
+  height: 2px;
+  width: 100px;
+  margin: 0 auto 30px;
+}
+
+.blog-mf .card-blog {
+  border: none;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-mf .card-blog:hover {
+  transform: translateY(-5px); /* Add a slight hover effect to the cards */
+}
+
+.blog-mf .card-blog .card-img {
+  overflow: hidden;
+  border-radius: 8px; /* Add rounded corners to the card images */
+}
+
+.blog-mf .card-blog .card-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px; /* Add rounded corners to the card images */
+}
+
+.blog-mf .card-blog .card-category-box {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-mf .card-blog .card-category {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.blog-mf .card-blog .card-title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333; /* Title color */
+}
+
+.blog-mf .card-blog .card-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666; /* Description color */
+}
+
+.blog-mf .card-blog .post-author .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.blog-mf .card-blog .post-author .author {
+  font-size: 16px;
+  color: #333; /* Author name color */
+}
+
+.blog-mf .card-blog .post-date {
+  font-size: 14px;
+  color: #888; /* Date color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .blog-mf .card-blog .card-title {
+    font-size: 20px;
+  }
+
+  .blog-mf .card-blog .card-description {
+    font-size: 14px;
+  }
+}
+/* Contact Section */
+.contact-mf .title-left {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-mf .box-shadow-full {
+  background-color: rgba(255, 255, 255, 0.95); /* Add a semi-transparent white background to the contact box */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact-mf .php-email-form .form-control {
+  background: #f8f8f8; /* Form input background color */
+  border-radius: 8px; /* Add rounded corners to form inputs */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-mf .php-email-form textarea.form-control {
+  resize: none; /* Disable textarea resizing */
+}
+
+.contact-mf .php-email-form .button-big {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-mf .php-email-form .button-big:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.contact-mf .more-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.contact-mf .list-ico {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-mf .list-ico li {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8; /* Footer background color */
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer .copyright-box {
+  margin-bottom: 20px;
+}
+
+footer .copyright {
+  font-size: 16px;
+  color: #555;
+}
+
+footer .credits a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: #fff;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  display: none;
+}
+
+.back-to-top:hover {
+  background: #0056b3; /* Darker shade of blue on hover */
+  cursor: pointer;
+}
